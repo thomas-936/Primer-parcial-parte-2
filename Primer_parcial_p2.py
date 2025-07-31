@@ -27,6 +27,12 @@ def contador(cadena, letra):
     if letra in cadena:
         return  cadena.count(letra)
 
+def binario(n):
+    if n == 0:
+        return 0
+    else:
+        return (n % 2) + 10 * binario(n // 2)
+
 while opcion != 6:
     print("+++MENU+++")
     print("1. Calcular el MCD")
@@ -61,6 +67,8 @@ while opcion != 6:
 
         case 4:
             print("Convertir un núemero decimal a bianrio ")
+            n = int(input("\nIngrese el nùmero que desea pasar a binario: "))
+            print(f"El número binario es: {binario(n)}")
 
         case 5:
             print("Calcular cuantos digitos tiene un nùmero")
@@ -72,3 +80,6 @@ while opcion != 6:
 
         case _:
             print("Ingrse un Opción Valida.")
+
+
+
