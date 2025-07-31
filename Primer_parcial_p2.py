@@ -23,6 +23,10 @@ def contar_digitos(digito):
     else:
         return  1+contar_digitos(digito//10)
 
+def contador(cadena, letra):
+    if letra in cadena:
+        return  cadena.count(letra)
+
 while opcion != 6:
     print("+++MENU+++")
     print("1. Calcular el MCD")
@@ -51,6 +55,9 @@ while opcion != 6:
             print(f"{repetitiva(palabra, veces)}")
         case 3:
             print("Contar cuantas veces aparece una letra en una cadena ")
+            cadena= input("Ingrese un una palabra: ")
+            letra = input("Ingrese la letra que desea contar: ")
+            print(f"En la cadena {cadena} la letra {letra} se repite: {contador(cadena, letra)} veces")
 
         case 4:
             print("Convertir un núemero decimal a bianrio ")
