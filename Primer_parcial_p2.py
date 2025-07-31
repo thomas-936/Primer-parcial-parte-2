@@ -80,6 +80,3 @@ while opcion != 6:
 
         case _:
             print("Ingrse un Opción Valida.")
-
-
-
